@@ -37,9 +37,9 @@ void setup() {
 
   // เช็คว่าเชื่อมต่อได้ไหม
   if (mpu.testConnection()) {
-    Serial.println("✅ MPU6050 เชื่อมต่อสำเร็จ!");
+    Serial.println(" MPU6050 เชื่อมต่อสำเร็จ!");
   } else {
-    Serial.println("❌ ไม่พบ MPU6050 — เช็คการต่อขาอีกครั้ง");
+    Serial.println(" ไม่พบ MPU6050 — เช็คการต่อขาอีกครั้ง");
     while (true);   // หยุดรอถ้าหาเซ็นเซอร์ไม่เจอ
   }
 
